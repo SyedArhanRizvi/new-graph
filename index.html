@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GRAPH Premium Plots</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="font-sans overflow-x-hidden text-gray-800 bg-white p-0">
+    <nav class="w-screen shadow-md fixed top-0 left-0 z-50 bg-white">
+      <!-- Desktop View -->
+      <div
+        class="max-w-7xl mx-auto px-4 lg:px-8 py-2 hidden md:flex flex-wrap justify-evenly items-center"
+      >
+        <!-- Logo -->
+        <a href="#" class="flex items-center space-x-2">
+          <img src="./images/logo2.png" alt="Logo" class="h-20 w-auto" />
+        </a>
+
+        <!-- Nav Links -->
+        <a
+          href="#"
+          class="hover:text-blue-600 flex font-semibold text-lg items-center gap-1"
+          >Home</a
+        >
+        <a
+          href="#"
+          class="hover:text-blue-600 flex font-semibold text-lg items-center gap-1"
+          >Vision</a
+        >
+        <a
+          href="#"
+          class="hover:text-blue-600 flex font-semibold text-lg items-center gap-1"
+          >Locations</a
+        >
+        <a
+          href="#"
+          class="hover:text-blue-600 flex font-semibold text-lg items-center gap-1"
+          >Feedbacks</a
+        >
+
+        <!-- CTA Button -->
+        <button class="bg-[#a9790c] text-white px-4 py-2 rounded-full">
+          Book A Site Visit
+        </button>
+      </div>
+
+      <!-- Mobile View -->
+      <div class="md:hidden px-4 py-3 flex items-center justify-between">
+        <!-- Logo -->
+        <a href="#" class="flex items-center space-x-2">
+          <img src="./images/logo2.png" alt="Logo" class="h-10 w-auto" />
+          <span class="font-bold text-xl"></span>
+        </a>
+
+        <!-- Hamburger Button -->
+        <button id="menuToggle" class="text-gray-700 focus:outline-none">
+          <i data-lucide="menu" class="w-10 h-10"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobileMenu"
+        class="absolute top-16 left-0 w-full bg-white shadow-md p-6 space-y-4 transform transition-all duration-300 ease-in-out -translate-y-full opacity-0 pointer-events-none md:hidden"
+      >
+        <a href="#" class="block text-lg flex items-center gap-2">
+          Home
+        </a>
+        <a href="#" class="block text-lg flex items-center gap-2">
+         Vision
+        </a>
+        <a href="#" class="block text-lg flex items-center gap-2">
+         Locations
+        </a>
+        <a href="#" class="block text-lg flex items-center gap-2">
+           Feedbacks
+        </a>
+        <button
+          class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700"
+        >
+          Book A Site Visit
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="relative w-screen min-h-[120vh] bg-cover bg-center flex items-center"
+      style="
+        background-image: url('./images/REAL ESTATE-1.png');
+        background-position: center;
+        background-size: cover;
+      "
+    >
+      <!-- Blue Gradient Overlay -->
+      <div class="absolute hOverlay top-0 left-0 w-[100%] h-full"></div>
+
+      <!-- Text Content -->
+      <div class="relative z-10 text-white pl-6 md:pl-16 lg:pl-24 max-w-3xl">
+        <h1
+          class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight"
+        >
+          Experience the Perfect Fusion of Lifestyle & Investment
+        </h1>
+        <p class="text-base sm:text-lg md:text-xl mb-6 max-w-xl">
+          Elevate your future with GRAPH’s premium residential plots in
+          Moradabad and Noida—where smart planning meets upscale living.
+          Starting at INR 1 Cr+, every plot is your gateway to a refined
+          lifestyle and sound financial growth
+        </p>
+        <button
+          class="border-white border-2 text-white font-bold px-6 py-3 rounded-full"
+        >
+          Consult with Our Experts
+        </button>
+      </div>
+
+      <!-- Curved SVG at bottom -->
+      <div class="absolute -bottom-5 md:-bottom-10 left-0 w-full z-10">
+        <svg
+          viewBox="0 0 1441 191"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-full h-auto"
+        >
+          <path
+            d="M93.5 33.5001C58.5 57.0001 13 81.0001 0.5 86.0001V191L1440.5 179.5V80.5001C1399 80.5001 1373.17 22.3645 1305 7.50002C1238.5 -6.99998 1190 34.0001 1144 68C1116 85.5 1040.62 91.3168 997 50.5001C942.5 -0.499863 890.667 4.3334 865.5 12.5001C827.5 28.0001 764 89.5446 708 84.0001C652 78.4556 631.5 37.4546 584 15.0001C520 -15.2545 478 26.2367 440.5 56.5C412 79.5002 381 84.0001 352.5 79.5002C324 75.0003 274.5 56.5 234 17.0001C195.34 -20.7049 120.5 15.3715 93.5 33.5001Z"
+            fill="white"
+          />
+        </svg>
+      </div>
+    </section>
+
+    <section class="w-screen py-10 overflow-hidden">
+      <!-- Top Heading Div -->
+      <div class="text-center px-4 md:px-6 mb-10 max-w-6xl mx-auto">
+        <h1 class="text-3xl text-[#001861] md:text-5xl font-bold mb-4">
+          Premium Features & Amenities
+        </h1>
+        <p class="text-base md:text-xl font-semibold text-gray-500">
+          Every GRAPH community is designed to exceed expectations with a
+          complete suite of modern conveniences
+        </p>
+      </div>
+
+      <!-- Sliding Carousel With Cards -->
+      <div class="relative">
+        <div
+          id="carouselWrapper"
+          class="flex gap-6 w-max px-4 md:px-6 overflow-x-auto scroll-smooth scroll-pl-6 snap-x snap-mandatory"
+          onmouseover="pauseCarousel()"
+          onmouseout="resumeCarousel()"
+        >
+          <!-- Card Template Start -->
+          <!-- Repeatable Cards -->
+          <div
+            class="relative w-[280px] h-[350px] bg-cover bg-center rounded-lg shadow-lg overflow-hidden snap-start shrink-0"
+            style="background-image: url('./images/REAL ESTATE-2.png')"
+          >
+            <div class="absolute top-0 left-0 w-[20%] h-full bg-black/40"></div>
+            <div
+              class="relative w-full h-full flex items-end justify-center p-4"
+            >
+              <div class="p-2 transform -rotate-90 origin-left">
+                <p class="text-white font-bold text-xl">
+                  Spacious, Well-Planned Plots
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="relative w-[280px] h-[350px] bg-cover bg-center rounded-lg shadow-lg overflow-hidden snap-start shrink-0"
+            style="background-image: url('./images/REAL ESTATE-6.png')"
+          >
+            <div class="absolute top-0 left-0 w-[20%] h-full bg-black/40"></div>
+            <div
+              class="relative w-full h-full flex items-end justify-center p-4"
+            >
+              <div class="p-2 transform -rotate-90 origin-left">
+                <p class="text-white font-bold text-xl">
+                  Landscaped Green Spaces & Parks
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="relative w-[280px] h-[350px] bg-cover bg-center rounded-lg shadow-lg overflow-hidden snap-start shrink-0"
+            style="background-image: url('./images/REAL ESTATE-8.png')"
+          >
+            <div class="absolute top-0 left-0 w-[20%] h-full bg-black/40"></div>
+            <div
+              class="relative w-full h-full flex items-end justify-center p-4"
+            >
+              <div class="p-2 transform -rotate-90 origin-left">
+                <p class="text-white font-bold text-xl">
+                  Exclusive Clubhouse & Community Center
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="relative w-[280px] h-[350px] bg-cover bg-center rounded-lg shadow-lg overflow-hidden snap-start shrink-0"
+            style="background-image: url('./images/REAL ESTATE-10.png')"
+          >
+            <div class="absolute top-0 left-0 w-[20%] h-full bg-black/40"></div>
+            <div
+              class="relative w-full h-full flex items-end justify-center p-4"
+            >
+              <div class="p-2 transform -rotate-90 origin-left">
+                <p class="text-white font-bold text-xl">
+                  Sports & Fitness Facilities
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="relative w-[280px] h-[350px] bg-cover bg-center rounded-lg shadow-lg overflow-hidden snap-start shrink-0"
+            style="background-image: url('./images/REAL ESTATE-4.png')"
+          >
+            <div class="absolute top-0 left-0 w-[20%] h-full bg-black/40"></div>
+            <div
+              class="relative w-full h-full flex items-end justify-center p-4"
+            >
+              <div class="p-2 transform -rotate-90 origin-left">
+                <p class="text-white font-bold text-xl">
+                  Advanced 24/7 Security
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="relative w-[280px] h-[350px] bg-cover bg-center rounded-lg shadow-lg overflow-hidden snap-start shrink-0"
+            style="background-image: url('./images/REAL ESTATE-2.png')"
+          >
+            <div class="absolute top-0 left-0 w-[20%] h-full bg-black/40"></div>
+            <div
+              class="relative w-full h-full flex items-end justify-center p-4"
+            >
+              <div class="p-2 transform -rotate-90 origin-left">
+                <p class="text-white font-bold text-xl">
+                  Spacious, Well-Planned Plots
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="relative w-[280px] h-[350px] bg-cover bg-center rounded-lg shadow-lg overflow-hidden snap-start shrink-0"
+            style="background-image: url('./images/REAL ESTATE-6.png')"
+          >
+            <div class="absolute top-0 left-0 w-[20%] h-full bg-black/40"></div>
+            <div
+              class="relative w-full h-full flex items-end justify-center p-4"
+            >
+              <div class="p-2 transform -rotate-90 origin-left">
+                <p class="text-white font-bold text-xl">
+                  Landscaped Green Spaces & Parks
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="relative w-[280px] h-[350px] bg-cover bg-center rounded-lg shadow-lg overflow-hidden snap-start shrink-0"
+            style="background-image: url('./images/REAL ESTATE-8.png')"
+          >
+            <div class="absolute top-0 left-0 w-[20%] h-full bg-black/40"></div>
+            <div
+              class="relative w-full h-full flex items-end justify-center p-4"
+            >
+              <div class="p-2 transform -rotate-90 origin-left">
+                <p class="text-white font-bold text-xl">
+                  Exclusive Clubhouse & Community Center
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="relative w-[280px] h-[350px] bg-cover bg-center rounded-lg shadow-lg overflow-hidden snap-start shrink-0"
+            style="background-image: url('./images/REAL ESTATE-10.png')"
+          >
+            <div class="absolute top-0 left-0 w-[20%] h-full bg-black/40"></div>
+            <div
+              class="relative w-full h-full flex items-end justify-center p-4"
+            >
+              <div class="p-2 transform -rotate-90 origin-left">
+                <p class="text-white font-bold text-xl">
+                  Sports & Fitness Facilities
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="relative w-[280px] h-[350px] bg-cover bg-center rounded-lg shadow-lg overflow-hidden snap-start shrink-0"
+            style="background-image: url('./images/REAL ESTATE-4.png')"
+          >
+            <div class="absolute top-0 left-0 w-[20%] h-full bg-black/40"></div>
+            <div
+              class="relative w-full h-full flex items-end justify-center p-4"
+            >
+              <div class="p-2 transform -rotate-90 origin-left">
+                <p class="text-white font-bold text-xl">
+                  Advanced 24/7 Security
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Repeat same blocks for more cards -->
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="relative h-auto md:h-[65vh] mt-40 w-screen flex flex-col md:flex-row items-center justify-center bg-[#001861] px-4 md:px-16 py-16"
+    >
+      <!-- Background Image -->
+      <img
+        src="./images/REAL ESTATE-12.png"
+        class="absolute bottom-0 left-1/2 md:left-[12%] transform -translate-x-1/2 md:translate-x-0 max-w-[80%] md:max-w-none"
+        alt=""
+      />
+
+      <!-- Text Section -->
+      <div
+        class="text-white w-full md:ml-[20rem] md:w-[40%] text-center md:text-left mt-64 md:mt-0 z-10"
+      >
+        <h1 class="text-2xl md:text-4xl font-bold mb-6">
+          A Vision Of Modern Living
+        </h1>
+        <p class="text-sm md:text-lg font-semibold">
+          At GRAPH, we blend innovative design with time-honored values to
+          create sustainable, secure, and luxurious living environments. Our
+          projects are thoughtfully planned to offer both immediate comfort and
+          long-term value, making each plot an exceptional asset in your
+          portfolio
+        </p>
+      </div>
+    </section>
+
+    <section
+      class="s4 bg-white w-full flex flex-col-reverse md:flex-row items-center justify-center px-6 md:px-20 py-10 gap-8 text-center md:text-left"
+    >
+      <!-- Text Content -->
+      <div class="w-full max-w-lg">
+        <h1 class="font-bold text-[#001861] text-2xl md:text-4xl mb-4">
+          Invest With Confidence
+        </h1>
+        <p class="text-[#001861] text-base md:text-lg font-bold">
+          At GRAPH, each project embodies a commitment to quality, transparency,
+          and forward-thinking design. Our rigorous construction standards and
+          strategic planning mean that your investment isn’t just a
+          purchase—it’s a promise of long-term security, growth, and a lifestyle
+          of distinction.
+        </p>
+      </div>
+
+      <!-- Image -->
+      <div class="w-full max-w-md flex justify-center">
+        <img
+          src="./images/REAL ESTATE-13.png"
+          alt="Investment Illustration"
+          class="w-64 md:w-80"
+        />
+      </div>
+    </section>
+
+    <section
+      class="s5 relative overflow-visible min-h-[30vh] mt-24 md:mt-0 mb-32 bg-[#001861] flex items-center justify-center px-4"
+    >
+      <!-- Heading Div Centered -->
+      <div>
+        <h1
+          class="capitalize text-white text-center text-sm md:text-5xl font-bold"
+        >
+          your next step toward luxury living
+        </h1>
+      </div>
+
+      <!-- Absolute Positioned Card Container -->
+      <div
+        class="cardContainer absolute -bottom-24 left-1/2 transform -translate-x-1/2 w-full max-w-6xl px-4"
+      >
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Card 1 -->
+          <div class="card bg-gray-100 p-6 shadow-md text-center">
+            <h1 class="text-[#001861] font-bold text-lg mb-2">Book A Visit</h1>
+            <p class="text-[#001861] text-sm font-semibold">
+              Experience firsthand the promise of modern living in a GRAPH
+              community.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card bg-gray-100 p-6 shadow-md text-center">
+            <h1 class="text-[#001861] font-bold text-lg mb-2">
+              Consult with Our Experts
+            </h1>
+            <p class="text-[#001861] text-sm font-semibold">
+              Receive personalized guidance on plot selection, architectural
+              vision, and financing options tailored to your needs.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card bg-gray-100 p-6 shadow-md text-center">
+            <h1 class="text-[#001861] font-bold text-lg mb-2">
+              Secure Your Plot
+            </h1>
+            <p class="text-[#001861] text-sm font-semibold">
+              Take decisive action and invest in a property that reflects your
+              success and ambition
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+ <section
+  class="flex flex-col lg:flex-row justify-center items-center md:mt-40 gap-10 px-4 md:px-6 py-12 bg-white"
+>
+  <!-- Left side div -->
+  <div class="w-full lg:w-[40%] text-center lg:text-left px-2 md:px-14">
+    <h1 class="text-2xl md:text-5xl font-bold text-[#001861] mb-4">
+      Connect With Us
+    </h1>
+    <p class="text-[#001861] text-sm md:text-xl font-semibold">
+      For further details or to schedule your site visit, please call
+      <b>+91 9876543210</b> or email us at <b>xyz@abc.com.</b> Embrace the
+      opportunity to transform your lifestyle and secure your future with
+      GRAPH—a new standard in Indian real estate.
+    </p>
+  </div>
+
+  <!-- Right side form div -->
+  <div class="w-full lg:w-[40%] bg-gray-200 p-6 rounded-lg shadow-md">
+    <form class="flex flex-col gap-6 w-full">
+      <input
+        type="text"
+        placeholder="Name"
+        class="w-full bg-white text-black font-bold px-4 py-4 rounded-md focus:outline-none"
+      />
+      <input
+        type="text"
+        placeholder="Email ID"
+        class="w-full bg-white text-black font-bold px-4 py-4 rounded-md focus:outline-none"
+      />
+      <input
+        type="text"
+        placeholder="Phone Number"
+        class="w-full bg-white text-black font-bold px-4 py-4 rounded-md focus:outline-none"
+      />
+      <input
+        type="submit"
+        value="Let us Contact You"
+        class="w-full bg-[#001861] text-[#a9790c] font-bold px-4 py-3 rounded-md cursor-pointer hover:bg-[#001050] transition"
+      />
+    </form>
+  </div>
+</section>
+
+
+
+
+
+    <!-- Footer -->
+   <footer class="bg-[#001861] w-full flex flex-col justify-center text-white py-12 px-4 sm:px-8 md:px-20 lg:px-32 xl:px-40">
+  <!-- Top Part -->
+  <div class="mb-10 flex flex-col md:flex-row gap-10 text-center md:text-left">
+    <div class="logo mb-4">
+      <img src="./images/logo.png" alt="Logo" class="mx-auto md:mx-0 h-20 w-40" />
+    </div>
+    <p class="text-xl font-semibold max-w-3xl">
+      Elevate your future with GRAPH’s premium residential plots in Moradabad and Noida— where smart planning meets upscale living. Starting at INR 1 Cr+, every plot is your gateway to a refined lifestyle and sound financial growth.
+    </p>
+  </div>
+
+  <!-- Center Part -->
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-10 text-sm text-center md:text-left">
+    <!-- Quick Links -->
+    <div>
+      <p class="font-bold mb-2 text-lg">Quick Links</p>
+      <ul class="space-y-1 text-lg font-semibold">
+        <li>Vision</li>
+        <li>Locations</li>
+        <li>Careers</li>
+        <li>Feedbacks</li>
+        <li>Newsletter</li>
+        <li>Blogs</li>
+      </ul>
+    </div>
+
+    <!-- Locations -->
+    <div>
+      <p class="font-bold text-lg mb-2">Locations</p>
+      <p class="flex items-center justify-center md:justify-start text-lg gap-2 mb-4">
+        <i data-lucide="map-pin" class="w-6 h-6"></i> <b>Moradabad</b>
+      </p>
+      <p class="flex items-center justify-center md:justify-start text-lg gap-2">
+        <i data-lucide="map-pin" class="w-6 h-6"></i> <b>Noida</b>
+      </p>
+    </div>
+
+    <!-- Contact Details -->
+    <div>
+      <p class="font-bold mb-2 text-lg">Contact Details</p>
+      <p class="flex items-center justify-center md:justify-start mb-4 text-lg gap-2">
+        <i data-lucide="phone" class="w-6 h-6"></i> <b>+91-9874563210</b>
+      </p>
+      <p class="flex items-center justify-center text-lg md:justify-start gap-2">
+        <i data-lucide="mail" class="w-6 h-6"></i> <b>abcd@infor.com</b>
+      </p>
+    </div>
+
+    <!-- Newsletter -->
+    <div>
+      <p class="font-bold mb-2 text-lg">Subscribe</p>
+      <input
+        type="email"
+        placeholder="Email ID"
+        class="w-full px-3 py-3 font-semibold rounded-md text-xl text-black mb-4"
+      />
+      <button
+        class="w-full bg-[#a9790c] text-xl text-white font-bold py-3 rounded-md hover:bg-gray-200 hover:text-black transition"
+      >
+        Subscribe to our newsletter
+      </button>
+    </div>
+  </div>
+
+  <!-- Bottom Part -->
+  <div class="border-t border-gray-400 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center text-xs text-center md:text-left gap-4">
+    <p>© All Copyright Rights are Reserved</p>
+    <p>Privacy Policy</p>
+  </div>
+</footer>
+
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+      lucide.createIcons();
+    </script>
+
+    <!-- JS -->
+    <script>
+      // GSAP animation for mobile menu
+      const menuToggle = document.getElementById("menuToggle");
+      const mobileMenu = document.getElementById("mobileMenu");
+      let isOpen = false;
+
+      menuToggle.addEventListener("click", () => {
+        if (!isOpen) {
+          gsap.to(mobileMenu, {
+            y: 0,
+            opacity: 1,
+            duration: 0.4,
+            pointerEvents: "auto",
+            ease: "power2.out",
+          });
+        } else {
+          gsap.to(mobileMenu, {
+            y: -mobileMenu.offsetHeight,
+            opacity: 0,
+            duration: 0.3,
+            pointerEvents: "none",
+            ease: "power2.in",
+          });
+        }
+        isOpen = !isOpen;
+      });
+
+      lucide.createIcons();
+      function handleSubmit(event) {
+        event.preventDefault();
+        const name = document.getElementById("name").value;
+        const phone = document.getElementById("phone").value;
+        const email = document.getElementById("email").value;
+        alert(`Thank you, ${name}! Our team will reach out to you soon.`);
+        event.target.reset();
+      }
+
+      let tl;
+
+      function startCarousel() {
+        const wrapper = document.getElementById("carouselWrapper");
+        tl = gsap.to(wrapper, {
+          x: "-50%",
+          duration: 20,
+          ease: "linear",
+          repeat: -1,
+        });
+      }
+
+      function pauseCarousel() {
+        if (tl) tl.pause();
+      }
+
+      function resumeCarousel() {
+        if (tl) tl.resume();
+      }
+
+      window.onload = startCarousel;
+      feather.replace();
+    </script>
+  </body>
+</html>
