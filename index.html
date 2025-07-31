@@ -69,17 +69,13 @@
         id="mobileMenu"
         class="absolute top-16 left-0 w-full bg-white shadow-md p-6 space-y-4 transform transition-all duration-300 ease-in-out -translate-y-full opacity-0 pointer-events-none md:hidden"
       >
+        <a href="#" class="block text-lg flex items-center gap-2"> Home </a>
+        <a href="#" class="block text-lg flex items-center gap-2"> Vision </a>
         <a href="#" class="block text-lg flex items-center gap-2">
-          Home
+          Locations
         </a>
         <a href="#" class="block text-lg flex items-center gap-2">
-         Vision
-        </a>
-        <a href="#" class="block text-lg flex items-center gap-2">
-         Locations
-        </a>
-        <a href="#" class="block text-lg flex items-center gap-2">
-           Feedbacks
+          Feedbacks
         </a>
         <button
           class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700"
@@ -376,6 +372,48 @@
       </div>
     </section>
 
+    <section class="px-4 md:px-10 lg:px-40 py-10 bg-white">
+  <!-- Header Part -->
+  <div class="mb-8 text-center">
+    <h1 class="text-[#001861] text-2xl sm:text-3xl md:text-5xl font-bold">
+      Strategic Locations for a Dynamic Life
+    </h1>
+  </div>
+
+  <!-- Cards Section -->
+  <div class="lcCards grid gap-6 md:grid-cols-2">
+    <!-- Card 1 -->
+    <div class="card bg-gray-200 flex items-start gap-4 p-6 border rounded-lg shadow-sm hover:shadow-md transition-all">
+      <div>
+        <i data-lucide="map-pin" class="text-[#001861] w-10 h-10"></i>
+      </div>
+      <div>
+        <h2 class="text-lg md:text-2xl font-bold text-[#001861]">Moradabad</h2>
+        <p class="text-[#001861] mt-1">
+          Discover a city rich in heritage and emerging as a modern urban
+          hub with excellent connectivity and serene surroundings.
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card bg-gray-200 flex items-start gap-4 p-6 border rounded-lg shadow-sm hover:shadow-md transition-all">
+      <div>
+        <i data-lucide="map-pin" class="text-[#001861] w-10 h-10"></i>
+      </div>
+      <div>
+        <h2 class="text-lg md:text-2xl font-bold text-[#001861]">Noida</h2>
+        <p class="text-[#001861] mt-1">
+          Embrace the pulse of the National Capital Region (NCR) with
+          state-of-the-art infrastructure, global business exposure, and
+          unmatched growth potential.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
     <section
       class="s5 relative overflow-visible min-h-[30vh] mt-24 md:mt-0 mb-32 bg-[#001861] flex items-center justify-center px-4"
     >
@@ -392,7 +430,7 @@
       <div
         class="cardContainer absolute lg:-bottom-24 left-1/2 transform -translate-x-1/2 w-full max-w-6xl px-4"
       >
-        <div class="grid  grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-6">
           <!-- Card 1 -->
           <div class="card bg-gray-100 p-6 shadow-md text-center">
             <h1 class="text-[#001861] font-bold text-lg mb-2">Book A Visit</h1>
@@ -427,126 +465,144 @@
       </div>
     </section>
 
- <section
-  class="flex flex-col lg:flex-row justify-center items-center md:mt-40 gap-10 px-4 md:px-6 py-12 bg-white"
->
-  <!-- Left side div -->
-  <div class="w-full lg:w-[40%] text-center lg:text-left px-2 md:px-14">
-    <h1 class="text-2xl md:text-5xl font-bold text-[#001861] mb-4">
-      Connect With Us
-    </h1>
-    <p class="text-[#001861] text-sm md:text-xl font-semibold">
-      For further details or to schedule your site visit, please call
-      <b>+91 9876543210</b> or email us at <b>xyz@abc.com.</b> Embrace the
-      opportunity to transform your lifestyle and secure your future with
-      GRAPH—a new standard in Indian real estate.
-    </p>
-  </div>
+    <section
+      class="flex flex-col lg:flex-row justify-center items-center md:mt-40 gap-10 px-4 md:px-6 py-12 bg-white"
+    >
+      <!-- Left side div -->
+      <div class="w-full lg:w-[40%] text-center lg:text-left px-2 md:px-14">
+        <h1 class="text-2xl md:text-5xl font-bold text-[#001861] mb-4">
+          Connect With Us
+        </h1>
+        <p class="text-[#001861] text-sm md:text-xl font-semibold">
+          For further details or to schedule your site visit, please call
+          <b>+91 9876543210</b> or email us at <b>xyz@abc.com.</b> Embrace the
+          opportunity to transform your lifestyle and secure your future with
+          GRAPH—a new standard in Indian real estate.
+        </p>
+      </div>
 
-  <!-- Right side form div -->
-  <div class="w-full lg:w-[40%] bg-gray-200 p-6 rounded-lg shadow-md">
-    <form class="flex flex-col gap-6 w-full">
-      <input
-        type="text"
-        placeholder="Name"
-        class="w-full bg-white text-black font-bold px-4 py-4 rounded-md focus:outline-none"
-      />
-      <input
-        type="text"
-        placeholder="Email ID"
-        class="w-full bg-white text-black font-bold px-4 py-4 rounded-md focus:outline-none"
-      />
-      <input
-        type="text"
-        placeholder="Phone Number"
-        class="w-full bg-white text-black font-bold px-4 py-4 rounded-md focus:outline-none"
-      />
-      <input
-        type="submit"
-        value="Let us Contact You"
-        class="w-full bg-[#001861] text-[#a9790c] font-bold px-4 py-3 rounded-md cursor-pointer hover:bg-[#001050] transition"
-      />
-    </form>
-  </div>
-</section>
-
-
-
-
+      <!-- Right side form div -->
+      <div class="w-full lg:w-[40%] bg-gray-200 p-6 rounded-lg shadow-md">
+        <form class="flex flex-col gap-6 w-full">
+          <input
+            type="text"
+            placeholder="Name"
+            class="w-full bg-white text-black font-bold px-4 py-4 rounded-md focus:outline-none"
+          />
+          <input
+            type="text"
+            placeholder="Email ID"
+            class="w-full bg-white text-black font-bold px-4 py-4 rounded-md focus:outline-none"
+          />
+          <input
+            type="text"
+            placeholder="Phone Number"
+            class="w-full bg-white text-black font-bold px-4 py-4 rounded-md focus:outline-none"
+          />
+          <input
+            type="submit"
+            value="Let us Contact You"
+            class="w-full bg-[#001861] text-[#a9790c] font-bold px-4 py-3 rounded-md cursor-pointer hover:bg-[#001050] transition"
+          />
+        </form>
+      </div>
+    </section>
 
     <!-- Footer -->
-   <footer class="bg-[#001861] w-full flex flex-col justify-center text-white py-12 px-4 sm:px-8 md:px-20 lg:px-32 xl:px-40">
-  <!-- Top Part -->
-  <div class="mb-10 flex flex-col md:flex-row gap-10 text-center md:text-left">
-    <div class="logo mb-4">
-      <img src="./images/logo.png" alt="Logo" class="mx-auto md:mx-0 h-40 w-[1000px] lg:h-20 lg:w-40" />
-    </div>
-    <p class="text-xl font-semibold max-w-3xl">
-      Elevate your future with GRAPH’s premium residential plots in Moradabad and Noida— where smart planning meets upscale living. Starting at INR 1 Cr+, every plot is your gateway to a refined lifestyle and sound financial growth.
-    </p>
-  </div>
-
-  <!-- Center Part -->
-  <div class="grid grid-cols-1 md:grid-cols-4 gap-10 text-sm text-center md:text-left">
-    <!-- Quick Links -->
-    <div>
-      <p class="font-bold mb-2 text-lg">Quick Links</p>
-      <ul class="space-y-1 text-lg font-semibold">
-        <li>Vision</li>
-        <li>Locations</li>
-        <li>Careers</li>
-        <li>Feedbacks</li>
-        <li>Newsletter</li>
-        <li>Blogs</li>
-      </ul>
-    </div>
-
-    <!-- Locations -->
-    <div>
-      <p class="font-bold text-lg mb-2">Locations</p>
-      <p class="flex items-center justify-center md:justify-start text-lg gap-2 mb-4">
-        <i data-lucide="map-pin" class="w-6 h-6"></i> <b>Moradabad</b>
-      </p>
-      <p class="flex items-center justify-center md:justify-start text-lg gap-2">
-        <i data-lucide="map-pin" class="w-6 h-6"></i> <b>Noida</b>
-      </p>
-    </div>
-
-    <!-- Contact Details -->
-    <div>
-      <p class="font-bold mb-2 text-lg">Contact Details</p>
-      <p class="flex items-center justify-center md:justify-start mb-4 text-lg gap-2">
-        <i data-lucide="phone" class="w-6 h-6"></i> <b>+91-9874563210</b>
-      </p>
-      <p class="flex items-center justify-center text-lg md:justify-start gap-2">
-        <i data-lucide="mail" class="w-6 h-6"></i> <b>abcd@infor.com</b>
-      </p>
-    </div>
-
-    <!-- Newsletter -->
-    <div>
-      <p class="font-bold mb-2 text-lg">Subscribe</p>
-      <input
-        type="email"
-        placeholder="Email ID"
-        class="w-full px-6 lg:px-3 py-3 font-semibold rounded-md lg:text-xl text-black mb-4"
-      />
-      <button
-        class="w-full bg-[#a9790c] lg:text-xl text-white font-bold py-3 px-6 lg:px-3 rounded-md hover:bg-gray-200 hover:text-black transition"
+    <footer
+      class="bg-[#001861] w-full flex flex-col justify-center text-white py-12 px-4 sm:px-8 md:px-20 lg:px-32 xl:px-40"
+    >
+      <!-- Top Part -->
+      <div
+        class="mb-10 flex flex-col md:flex-row gap-10 text-center md:text-left"
       >
-       <p class="hidden lg:flex"> Subscribe to our newsletter</p>
-       <p class="flex lg:hidden">Subscribe</p>
-      </button>
-    </div>
-  </div>
+        <div class="logo mb-4">
+          <img
+            src="./images/logo.png"
+            alt="Logo"
+            class="mx-auto md:mx-0 h-40 w-[1000px] lg:h-20 lg:w-40"
+          />
+        </div>
+        <p class="text-xl font-semibold max-w-3xl">
+          Elevate your future with GRAPH’s premium residential plots in
+          Moradabad and Noida— where smart planning meets upscale living.
+          Starting at INR 1 Cr+, every plot is your gateway to a refined
+          lifestyle and sound financial growth.
+        </p>
+      </div>
 
-  <!-- Bottom Part -->
-  <div class="border-t border-gray-400 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center text-xs text-center md:text-left gap-4">
-    <p>© All Copyright Rights are Reserved</p>
-    <p>Privacy Policy</p>
-  </div>
-</footer>
+      <!-- Center Part -->
+      <div
+        class="grid grid-cols-1 md:grid-cols-4 gap-10 text-sm text-center md:text-left"
+      >
+        <!-- Quick Links -->
+        <div>
+          <p class="font-bold mb-2 text-lg">Quick Links</p>
+          <ul class="space-y-1 text-lg font-semibold">
+            <li>Vision</li>
+            <li>Locations</li>
+            <li>Careers</li>
+            <li>Feedbacks</li>
+            <li>Newsletter</li>
+            <li>Blogs</li>
+          </ul>
+        </div>
 
+        <!-- Locations -->
+        <div>
+          <p class="font-bold text-lg mb-2">Locations</p>
+          <p
+            class="flex items-center justify-center md:justify-start text-lg gap-2 mb-4"
+          >
+            <i data-lucide="map-pin" class="w-6 h-6"></i> <b>Moradabad</b>
+          </p>
+          <p
+            class="flex items-center justify-center md:justify-start text-lg gap-2"
+          >
+            <i data-lucide="map-pin" class="w-6 h-6"></i> <b>Noida</b>
+          </p>
+        </div>
+
+        <!-- Contact Details -->
+        <div>
+          <p class="font-bold mb-2 text-lg">Contact Details</p>
+          <p
+            class="flex items-center justify-center md:justify-start mb-4 text-lg gap-2"
+          >
+            <i data-lucide="phone" class="w-6 h-6"></i> <b>+91-9874563210</b>
+          </p>
+          <p
+            class="flex items-center justify-center text-lg md:justify-start gap-2"
+          >
+            <i data-lucide="mail" class="w-6 h-6"></i> <b>abcd@infor.com</b>
+          </p>
+        </div>
+
+        <!-- Newsletter -->
+        <div>
+          <p class="font-bold mb-2 text-lg">Subscribe</p>
+          <input
+            type="email"
+            placeholder="Email ID"
+            class="w-full px-6 lg:px-3 py-3 font-semibold rounded-md lg:text-xl text-black mb-4"
+          />
+          <button
+            class="w-full bg-[#a9790c] lg:text-xl text-white font-bold py-3 px-6 lg:px-3 rounded-md hover:bg-gray-200 hover:text-black transition"
+          >
+            <p class="hidden lg:flex">Subscribe to our newsletter</p>
+            <p class="flex lg:hidden">Subscribe</p>
+          </button>
+        </div>
+      </div>
+
+      <!-- Bottom Part -->
+      <div
+        class="border-t border-gray-400 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center text-xs text-center md:text-left gap-4"
+      >
+        <p>© All Copyright Rights are Reserved</p>
+        <p>Privacy Policy</p>
+      </div>
+    </footer>
 
     <!-- Initialize Lucide Icons -->
     <script>
